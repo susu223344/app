@@ -5,4 +5,4 @@ scikit-survival==0.17.2
 pandas==1.1.5
 matplotlib==3.5.3
 xgboost==1.6.2
-scikit-learn==1.0.2
+numpy==1.21.6
