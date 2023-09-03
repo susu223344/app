@@ -6,3 +6,4 @@ pandas==1.1.5
 matplotlib==3.5.3
 xgboost==1.6.2
 numpy==1.21.6
+ipython==8.12.0
