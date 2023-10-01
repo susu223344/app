@@ -47,7 +47,7 @@ with st.sidebar:
     MICU_SICU = st.selectbox("Medical or surgical intensive care unit (MICU/SICU)", ["Yes", "No"])
 if st.sidebar.button("Predict"):
     with st.spinner("Forecast, please wait..."):
-        st.header('1. Prediction for device-associated infections')
+        st.header('1. Prediction for device-associated infection')
         test_df = pd.DataFrame([dic2[IMV], dic2[IUC], dic2[CVC], dic1[Gender],
                                 dic2[Liver_disease], dic2[Myocardial_infarct], dic2[Malignant_cancer],
                                 dic2[MICU_SICU]],
