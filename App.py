@@ -4,9 +4,6 @@ import joblib
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
-
-
 if 'model1' not in st.session_state:
     model1 = joblib.load('clf.pkl')
     model2 = joblib.load('clf2.pkl')
@@ -15,8 +12,6 @@ if 'model1' not in st.session_state:
 else:
     model1 = st.session_state["model1"]
     model2 = st.session_state["model2"]
-
-
 scaler = joblib.load("Scaler.pkl")
 continuous_vars = ['Age','Anion gap','Respiratory rate','APSIII']
 
