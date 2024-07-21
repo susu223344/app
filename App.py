@@ -4,7 +4,6 @@ import joblib
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn import metrics
-import seaborn as sns
 # 输出混淆矩阵
 # 预测
 
