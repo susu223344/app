@@ -24,10 +24,7 @@ st.set_page_config(layout='wide')
 
 st.write("<h1 style='text-align: center'>Prediction for Device-Associated Infections and 30-Day Survival Outcome of Intensive Care Unit Patients Undergoing Invasive Device Procedures</h1>",
          unsafe_allow_html=True)
-st.warning('This assistance includes the following functionalities: 
-(1) Upon a patient’s admission to the ICU without prior device usage, physicians can input varying durations of CVC and IMV usage based on the patient’s current fixed variables. This enables the prediction of the risk level of device-associated infections at different time intervals during device usage, facilitating the determination of the latest suitable time for device implementation and the appropriate equipment category.
-(2) For patients with existing ICU tenure and prior device usage, physicians can input varying durations of device usage and adjust tracheostomy status to forecast device-associated infection risks. This capability assists doctors in deliberating the necessity of additional equipment and tracheostomy for the patient. 
-(3) In scenarios where device usage duration is fixed, ICU physicians can integrate current forecasts of device-associated infection risk and 30-day mortality risk to conduct a comprehensive evaluation of the patient’s overall prognosis, enabling timely intervention as needed.')
+st.warning('This assistance includes the following functionalities: (1) Users can input varying durations of CVC and IMV usage based on the patient’s current fixed variables. This enables the prediction of the risk level of device-associated infections at different time intervals during device usage. (2) Users can input varying durations of device usage and adjust tracheostomy status to forecast device-associated infection risks. (3) Users can integrate current forecasts of device-associated infection risk and 30-day mortality risk.')
 
 
 st.markdown('-----')
