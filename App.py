@@ -52,7 +52,7 @@ with st.sidebar:
     Cancer = st.selectbox("Cancer", ["Yes", "No"])
     Age = st.text_input("Age (years)")	
     SAPII = st.text_input("SPASII within 24 hours of ICU admission")	
-    Cerebrovascular_disease = st.selectbox("Cerebrovascular_disease", ["Yes", "No"])	
+    Cerebrovascular_disease = st.selectbox("Cerebrovascular disease", ["Yes", "No"])	
     Liver_disease = st.selectbox("Liver disease", ["Yes", "No"])	
     Aniongap = st.text_input("Anion gap (mmol/L) within 24 hours of ICU admission") 	
     Myocardial_infarct = st.selectbox("Myocardial infarct", ["Yes", "No"])		
