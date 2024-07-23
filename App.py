@@ -89,7 +89,7 @@ if st.sidebar.button("Predict"):
         col7, col8, col9 = st.columns([2, 5, 3])
         with col8:
             st.image('mtplot.jpg')
-    st.warning('Sensitivity: 0.033, Specificity: 0.967')
+        st.warning('Sensitivity: 0.033, Specificity: 0.967')
         
         
         								
