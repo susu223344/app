@@ -88,8 +88,8 @@ if st.sidebar.button("Predict"):
         st.header('2. Confusion matrix')
         col7, col8, col9 = st.columns([2, 5, 3])
         with col8:
-            st.image('mtplot.jpg')
-        st.warning('Sensitivity: 0.033, Specificity: 0.967')
+            st.image('motplot2.jpg')
+        st.warning('Sensitivity: 0.312, Specificity: 0.688')
         
         
         								
