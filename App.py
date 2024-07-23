@@ -89,7 +89,7 @@ if st.sidebar.button("Predict"):
         col7, col8, col9 = st.columns([2, 5, 3])
         with col8:
             st.image('motplot2.jpg')
-        st.warning('Sensitivity: 13.64%, Specificity: 99.95%')
+        st.warning('Sensitivity: 31.21%, Specificity: 99.98%')
         
         
         								
