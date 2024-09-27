@@ -59,7 +59,7 @@ with st.sidebar:
     Two_or_more_devices = st.selectbox("Using two or more devices", ["Yes", "No"])	
 if st.sidebar.button("Predict"):
     with st.spinner("Forecast, please wait..."):
-        st.header('1. Prediction for device-associated infections')
+        st.header('Prediction for device-associated infections')
         test_df = pd.DataFrame([float(LOS_before_using_CVC), float(LOS_before_using_IMV), dic2[Tracheostomy], float(APSIII), dic2[MICU_or_SICU], 
                                 float(Temperature), float(LOS_before_using_IUC), float(MAP), dic2[RRT], float(PT)], 
                                index=['LOS_before_using_CVC', 'LOS_before_using_IMV', 'Tracheostomy', 'APSIII', 'MICU_or_SICU', 'Temperature',
@@ -85,16 +85,16 @@ if st.sidebar.button("Predict"):
             st.image('shap2.png')
         st.success("Probability of device-associated infection: {:.3f}%".format(model1.predict_proba(test_df)[:, 1][0] * 100))
         
-        st.header('2. confusion matrix diagram')
-        col7, col8, col9 = st.columns([2, 5, 3])
-        with col8:
-            st.image('motplot2.jpg')
-        st.warning('Sensitivity: 31.21%, Specificity: 99.98%.')
+        # st.header('confusion matrix diagram')
+        # col7, col8, col9 = st.columns([2, 5, 3])
+        # with col8:
+        #     st.image('motplot2.jpg')
+        # st.warning('Sensitivity: 31.21%, Specificity: 99.98%.')
         
         
         								
         
-        st.header('3. 30-day Kaplan-Meier survival curve')
+        st.header('30-day Kaplan-Meier survival curve')
         
         test_df2 = pd.DataFrame([dic2[MICU_or_SICU], dic2[Cancer], float(APSIII), float(Age), float(SAPII), dic2[Cerebrovascular_disease],
                                  dic2[Liver_disease], float(Aniongap), dic2[Myocardial_infarct], dic2[Two_or_more_devices]], 
